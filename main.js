@@ -34,7 +34,7 @@ function startDateTime() {
 
 function getDateTime() {
 	$.ajax({
-		url: 'http://worldtimeapi.org/api/timezone/' + timezone,
+		url: 'https://worldtimeapi.org/api/timezone/' + timezone,
 		type: 'GET',
 		success: function(data) {
 			let api_datetime = data['datetime'];
